@@ -1,0 +1,25 @@
+{
+  "name": "onlab_registration_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm install && typings install && npm run compile:ts",
+    "start": "node index.js",
+    "predev": "npm install && typings install",
+    "dev": "NODE_ENV=development parallelshell \"npm run compile:ts:dev\" \"nodemon index.js\"",
+    "compile:ts:dev": "tsc -w",
+    "compile:ts": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parallelshell": "^2.0.0",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4"
+  }
+}
