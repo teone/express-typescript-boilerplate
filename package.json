@@ -12,7 +12,7 @@
     "compile:ts:dev": "tsc -w",
     "compile:ts": "tsc"
   },
-  "author": "",
+  "author": "Matteo Scandolo",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
